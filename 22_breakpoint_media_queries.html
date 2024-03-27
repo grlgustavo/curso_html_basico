@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+        .grid{
+            margin: 15px;
+        }
+        .grid::after{
+            content: '';
+            display: block;
+            /* Clear: indica qual lado do elemento não deve ser atrelado a outro elemento */
+            clear: both;
+        }
+        .grid .col{
+            width: 33.33%;
+            height: 300px;
+            /* Float: um elemento ocupa somente o espaço dele e libera o espaço restante para outros elementos */
+            float: left;
+            padding: 15px;
+            background: lightgray;
+        }
+        .grid .col-content{
+            width: 100%;
+            height: 100%;
+            background: lightcoral;
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }        
+        a{
+            font-size: 1.6rem;
+        }
+        @media (max-width: 320px) {
+            .grid .col{
+                width: 100%;
+            }
+        }
+        @media (min-width: 321px) and (max-width: 768px) {
+            .grid .col{
+                width: 50%;
+            }
+        }        
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .grid .col{
+                width: 33.33%;
+            }
+        }        
+        @media (min-width: 1201px) {
+            .grid .col{
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://devfacts.com/media-queries-breakpoints/"> Media Queries Breakpoints</a></p>    
+    <a href="https://w3schools.com/cssref/css3_pr_mediaquery.asp"> W3 Schools - Media Queries e Breakpoints</a></p>
+    <div class="grid">
+        <div class="col">
+            <div class="col-content">Conteúdo 1</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteúdo 2</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteúdo 3</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteúdo 4</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteúdo 5</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteúdo 6</div>
+        </div>
+    </div>
+</body>
+</html>

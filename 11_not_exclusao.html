@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:not(.meio){
+            background: blue;
+        }
+        input:checked{
+            width: 20px;
+            height: 20px;
+        }
+        input:checked + label{
+            font-size: 20px;
+        }
+        input:not(:checked) ~ label.obrigatorio{
+            visibility: hidden;
+        }
+        [teste]:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="nome" name="nome">
+    <label for nome>Nome</label>
+    <label class="obrigatorio" for nome><small>*Campo obrigatório</small></label>
+    <p>Lore ipsum</p>
+    <p class="meio">Lore ipsum</p>
+    <p>Lore ipsum</p>
+    <p teste>Lorem ipsum</p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* fex-flow: direction wrap; */
+        flex-flow: row wrap;
+        background: lightgrey;
+        height: 640px;
+    }
+    .flex-item{
+        /* flex: grow shrink basis; */
+        flex: 1 1 320px;
+        height: 200px;
+        margin: 2% 0;
+        background: lightsalmon;
+    }
+    .flex-item:nth-child(2){
+        /* flex: grow shrink basis; */
+        flex: 1 1 320px;
+        height: 200px;
+        margin: 2% 0;
+        background: darkred;
+        /* O ordem padrão é 0, aumentando o item vai pro final da fila, 
+        diminuindo vai pro começo */
+        order:1;
+    }
+    .flex-item:nth-child(6){
+        background: darkgreen;
+        order: -1;
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+        <div class="flex-item">Seis</div>
+    </div>    
+</body>
+</html>

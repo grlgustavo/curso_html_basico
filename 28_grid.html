@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1200px;
+            background: lightgray;
+            margin: 0 auto;
+        }
+        .grid{
+            display: grid;
+            background-color: lightcoral;
+            grid-template-rows: 50px 1fr auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+                'header header'
+                'nav main'
+                'rodape rodape';
+        }
+        .grid div:nth-child(1){
+            grid-area: header;
+            background: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .grid div:nth-child(2){
+            grid-area: nav;
+            background: yellow;
+        }
+        .grid div:nth-child(3){
+            grid-area: main;
+            background: green;
+        }
+        .grid div:nth-child(4){
+            grid-area: rodape;
+        }
+        a{
+            display: block;
+            margin: 15px;
+        }
+        @media (max-width: 768px){
+            .grid{
+                display: grid;
+                background-color: lightcoral;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas: 
+                    'header'
+                    'nav' 
+                    'main'
+                    'rodape';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div>
+                <h1>Logo</h1>
+                <nav>menu</nav>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                        <li>Item 6</li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h1>Olá mundo!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ex nobis reprehenderit rem tempore labore accusantium, sit fugiat facere in officia recusandae quasi veritatis officiis totam exercitationem culpa modi perspiciatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ex nobis reprehenderit rem tempore labore accusantium, sit fugiat facere in officia recusandae quasi veritatis officiis totam exercitationem culpa modi perspiciatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ex nobis reprehenderit rem tempore labore accusantium, sit fugiat facere in officia recusandae quasi veritatis officiis totam exercitationem culpa modi perspiciatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ex nobis reprehenderit rem tempore labore accusantium, sit fugiat facere in officia recusandae quasi veritatis officiis totam exercitationem culpa modi perspiciatis.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas, itaque commodi in possimus ipsam voluptatibus sapiente pariatur quasi corporis reprehenderit sequi quos eius aliquam dolores iure fugit sunt beatae.</p>
+            </div>
+        </div>
+    </div>
+    
+    <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Tricks - A Complete Guid do Grid</a>
+    <a href="https://w3schools.com/css/css_grid.asp" target="_blank">w3schools - CSS Grid Layout Module</a>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid" target="_blank">MDN Web Docs - Grid</a>
+</body>
+</html>

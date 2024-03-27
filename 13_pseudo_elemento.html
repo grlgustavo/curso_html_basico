@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Inclui um elemento 'fantasma' após o conteúdo da lista que não existe no html, só no css */
+        li::after{
+            content: ' - ';
+            background-color: red;
+            color: whitesmoke;
+        }
+        li::before{
+            content: ' - ';
+            background-color: brown;
+            color: whitesmoke;
+            /* Incluindo o display block ele quebra a linha */
+            display: block;
+        }
+        p::first-letter{
+            font-size: 40px;
+            display: block;
+            float: left;
+            margin: 0px 10px 5px 0;
+        }
+        p::first-line{
+            color: greenyellow;
+        }
+        p::selection{
+            background: black;
+            color: whitesmoke;
+        }
+        .input-field::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <br>
+    </ul>
+    <input class="input-field" type="text" placeholder="Primeiro nome"><br>
+    <input type="text" placeholder="Sobrenome">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis vel minus laborum placeat est vitae iure suscipit saepe sed. Molestiae dicta illo cumque est molestias quaerat minima, eum magnam exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo et aliquid, voluptas culpa itaque nulla fuga dolores sequi neque, nostrum fugit totam. Excepturi optio harum provident perspiciatis libero molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatem magni magnam provident pariatur tempore! Quas veniam repellat sint sequi et earum hic provident impedit fuga, corrupti temporibus in atque!</p>
+</body>
+</html>

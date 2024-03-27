@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 63.5%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .filha_1, .filha_2, .filha_3{
+            font-size: 1.6rem;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding: 15px;
+            position: absolute;
+        }
+        .filha_1{
+            background: red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 0;
+        }
+        .filha_2{
+            top: 50px;
+            left: 50px;
+            background: green;
+            z-index: -1;
+        }
+        .filha_3{
+            top: 50px;
+            left: 50px;
+            background: blue;
+            z-index: -2;
+        }
+
+        /* Position:
+        Absolute: faz com que o elemento flutue na tela independente dos demais, deta forma ele se comporta como se estivesse em uma camada superior aos demais
+        Relative: Posição relativa, porém ela bloqueia o espaço, fazendo com que outros elementos não ocupem o espaço
+        O posicionamento é considerado pelas diagonais dos elementos
+        z-index: mostra a camada que o objeto terá, quanto maior o número  mais 'pra cima' ele estará*/
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filha_1">Filha_1</div>
+        <div class="filha_2">Filha_2</div>
+        <div class="filha_3">Filha_3</div>
+    </div>
+</body>
+</html>

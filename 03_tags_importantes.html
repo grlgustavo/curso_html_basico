@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <style>
+        .vermelho{
+            font-size: 24px;
+            color: red;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Tags importantes no HTML</h1>
+    <p>
+        <b>Negrito:</b> Deixa a fonte em negrito, mas os leitores de página não entendem esta enfase.<b>Tag Física</b><br>
+        <br>
+        <strong>Strong:</strong>Assim como o negrito, destacam o texto, mas adicionalmente eles dão enfase ao conteúdo, de forma que leitores de tela conseguem enfatizar o conteúdo.<b>Tag Semântica</b><br>
+        <br>
+        <b><i>Itálico:</i></b> Destacam o conteúdo, mas sem afetar os leitores de página.<b>Tag Física</b><br>
+        <br>
+        <b><i><u>Sublinhado:</u></i></b> Destacam o conteúdo, mas sem afetar os leitores de página.<b>Tag Física</b><br>
+        <br>
+        <s>Sobrescrito>:</s>Sobrescreve o contéudo, mas sem afetar os leitores de páginas. <b>Tag Física</b><br>
+        <br>
+        Podemos <del>sobrescrever</del> uma parte do texto indicando que a palavra está "incorreta" e <ins>inserir</ins> a palavra correta em substituição a primeira.Estas tags influenciam o comportamento dos leitores de páginas.<b>Tag Semântica</b><br>
+        <br>
+        <small>Small:</small>Diminuem o tamanho do conteúdo.<small><small>Colocadas em cadeia diminuem ainda mais...</small></small><br>
+        <br>
+        <sup>Potênciação:</sup>Usado para colocar o texto pequeno e acima. Exemplo: 2<sup>2</sup><br>
+        <br>
+        <sub>Pequeno e abaixo:</sub> Semelhante a potenciação, mas fica abaixo. Exemplo: H<sub>2</sub>O<br>
+        <br>
+        <q cite="https://google.com">citação</q>: Coloca o conteúdo entre aspas duplas indicando uma sitação, normalmente terá um link para um texto explicativo.<br>
+        <br>
+        <code>Code:</code>Usado para ter uma fonte específica que representa linhas de código. Usado com a tag pre formata o texto de acordo com o descrito.<br>
+        Exemplo:
+        <pre><code>
+            a=1
+            b=2
+            c = a + b
+        </code></pre>
+        <br>
+        <b>Span</b>:Tag de contexto genérico para texto inline, serve para aplicar estilos <span class="vermelho">diferenciados</span> em parte do texto.<br>
+        <br>
+
+        <b>Div:</b>Cria um parágrafo com o conteúdo. Exemplo: <div class="vermelho">Eu sou um bloco</div>
+        <br>        
+        <img src="https://live.mdnplay.dev/pt-BR/docs/Web/CSS/object-fit/mdn_logo_only_color.png" alt="Logo da MDN" width="150"><br>
+        <br>        
+        <a class="vermelho" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank" >Link para todos os elementos HTML</a><br>
+    </p>
+    <hr>
+    <blockquote cite="https://google.com">
+        <p>
+            Aqui sim estou fazendo um bloco de sitação. Esta tag vêm fora do parágrafo
+        </p>
+    </blockquote>
+</body>
+</html>

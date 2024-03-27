@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Seleciona os pares */
+        li:nth-child(even){
+            background-color: green;
+        }
+        /* Seleciona os ímpares */
+        li:nth-child(odd){
+            background-color: purple;
+        }
+        /* Seleciona múltiplos */
+        li:nth-child(3n){
+            color: whitesmoke;
+        }
+        /* Determina qual membro começa a seleção de multíplos */
+        li:nth-child(3n+6){
+            font-size: x-large;
+        }
+        /* Seleciona o primeiro irmão */
+        li:first-child{
+            visibility: hidden;
+        }
+        /* Seleciona o último irmão */
+        li:last-child{
+            visibility: hidden;
+        }
+        </style>
+</head>
+<body>
+    <p class="pai"><h1>Pai</h1></p>
+    <ul>
+        <li>Filho 1</li>
+        <li>Filho 2</li>
+        <li>Filho 3</li>
+        <li>Filho 4</li>
+        <li>Filho 5</li>
+        <li>Filho 6</li>
+        <li>Filho 7</li>
+        <li>Filho 8</li>
+        <li>Filho 9</li>
+        <li>Filho 10</li>
+        <li>Filho 11</li>
+        <li>Filho 12</li>
+        <li>Filho 13</li>
+        <li>Filho 14</li>
+        <li>Filho 15</li>
+        <li>Filho 16</li>
+        <li>Filho 17</li>
+        <li>Filho 18</li>
+        <li>Filho 19</li>
+        <li>Filho 20</li>
+    </ul>
+</body>
+</html>

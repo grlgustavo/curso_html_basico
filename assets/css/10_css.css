@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Usar o ':' abre as sub-classes */
+.pai h1:hover{
+    background-color: red;
+    /* cria um efeito de transição ao executar a ação */
+    transition: all 900ms ease-in-out;
+}
+/* O Hover muda a cor conforme o mouse passa por cima (independente de clicar) */
+/* Usar o '[]' faz com que selecionemos somente o atributo */
+[teste]:hover{
+    background-color: blue;
+}
+
+/* Muda a cor de todos os links */
+a{
+    color: darkorange;
+}
+
+/* Muda a cor dos links não visitados */
+a:link{
+    color:deeppink ;
+}
+
+/* Muda a cor dos links já visitados */
+a:visited{
+    color: firebrick;
+}
+
+/* Aplica um efeito enquanto a ação está ativa (mouse clicado por exemplo) */
+a:active{
+    background-color: aqua;
+}
+
+input:focus{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+input:checked{
+    width: 20px;
+    height: 20px;
+}
+/* O sinal de + permite selecionar irmãos na hierarquia */
+input + label{
+    visibility: hidden;
+}
+input:checked + label{
+    visibility: visible;
+    font-size: 20px;
+    color: chartreuse;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* Como a fonte padrão é 16px, 62,5% faz com que a fonte fique
+            com aproximadamente 10px*/
+            font-size: 62.5%;
+        }
+        p{
+            /* rem é uma unidade relativa, ela é multiplo do configurado na 
+            raiz.
+            Colocando 1,6rem fazemos com que a fonte retorne aos 16px, porém caso o usuário mude o tamanho da fonte do navegador as fontes se adequarão*/
+            font-size: 1.6rem;
+        }
+        .pai{
+            /* px é uma unidade de medida fixa, a aparencia do texto não 
+            altera conforme configuração do navegado */
+            font-size: 53px;
+        }
+        p.filho{
+            /* em é uma unidade relativa, ela é multiplo do configurado no 
+            pai do elemento */
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <p class="filho">Lorem ipsum - 2em.</p>
+        <p>Lorem ipsum - 1.6rem.</p>
+        <p style="font-size: initial"> A fonte padrão do sistema é 16px</p>
+    </div>
+    <h1>h1 - 2em</h1>
+    <h2>h2 - 1.5em</h2>
+    <h3>h3 - 1.17em</h3>
+    <h4>h4 - 1em</h4>
+    <h5>h5 - 0.83em</h5>
+    <h6>h6 - 0.67em</h6>
+
+</body>
+</html>

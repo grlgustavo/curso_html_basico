@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        form{
+            background: #ccc;
+            padding: 5px;
+        }
+        label{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </p>
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" id="dev" name="dev" value="sim">
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#ff0000">
+        </p>
+        <p>
+            Meu nível é:<br>
+            <input type="radio" id="junior" name="level" value="junior">
+            <label for="junior">Junior</label>
+            <input type="radio" id="pleno" name="level" value="pleno">
+            <label for="pleno">Pleno</label>
+            <input type="radio" id="senior" name="level" value="senior">
+            <label for="senior">Sênior</label>
+            
+        </p>
+        <p>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" value="2024-03-11">
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" value="20:00:01">
+        </p>
+        <p>
+            <label for="date_time">Data e Hora:</label>
+            <input type="datetime-local" id="date_time" name="date_time" value="2024-03-11T20:00">
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="********">
+        </p>
+        <p>
+            <label for="photo">Sua foto:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" multiple>
+        </p>
+        <p>
+            <label for="number">Digite um número:</label>
+            <input type="number" id="number" name="number" min="10" max="100" step="5">
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="10" max="100" step="10" list="tickmarks5">
+            <datalist id="tickmarks">
+                <option value="10" label="10%"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+        </p>
+        <p>
+            <label for="url">Digite uma url:</label>
+            <input type="url" id="url" name="url" placeholder="www.seusite.com.br">
+            <label for="search">Digite uma busca:</label>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p>
+        <p>
+            <label for="select">Selecione um Estado:</label>
+            <select id="select" name="select">
+                <option value="">Estado</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR" label="Paraná"></option>
+                    <option value="SC" label="Santa Catarina"></option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="textarea">Text área</label>
+            <textarea name="textarea" id="textarea" rows="8" cols="90"></textarea>
+        </p>
+        <p>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
+
+
+    <hr>
+    <a  href="https://w3schools.com/html/html_forms.asp">Link para o HTML forms</a> 
+</body>
+</html>

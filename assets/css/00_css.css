@@ -1,0 +1,60 @@
+/* 
+Ordem de aplicação nos estilos. Quando a especificidade é a mesma a última 
+formatação é a que será aplicada, quando há diferenças a maior é a que prevalece
+
+Caso o style seja aplicado diretamente no elemento ele sobrescreverá qualquer uma destas regras
+
+Quando não usamos espaços entre as clausulas (p#p.p::first-letter) estamos
+falando do mesmo elemento, quando usamos espaços (#b p#p.p) estamos criando 
+uma hierarquia
+
+!important - É o 'super-trunfo' dos estilos, sobrescreverá qualquer regra,
+só poderá ser superada por outra !important
+
+#   - Seleciona o ID
+.   - Seleiona a Classe
+:   - Seleciona a pseudo-classe
+[]  - Seleciona o atributo
+tag - Seleciona elemento
+::  - Selecoina o pseudo-elemento
+
+ID    Classes, atributos e pseudo-classes    Elementos e pseudo-elementos
+1       0                                       0
+0       1                                       0
+1       1                                       0
+1       0                                       1  
+1       1                                       1
+2       1                                       1
+2       1                                       2
+0       0                                       1   Ganha força c/ !important
+*/
+
+/* Selecionando pelo ID */
+#p{
+    background: red;
+}
+/* Selecionando pela classe */
+.p{
+    background: yellow;
+}
+/* Selecionando o ID e a classe */
+#p.p{
+    background: yellow;
+}
+/* Selecionando o elemento e o ID */
+p#p{
+    background: red;
+}
+/* Selecionando o elemento, o ID e a classe */
+p#p.p{
+    background: red;
+}
+#b p#p.p{
+    background: yellow;
+}
+#b p#p.p::first-letter{
+    background: blue;
+}
+::first-letter{
+    background: green !important;
+}

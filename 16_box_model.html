@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html, body{
+            height: 100%;
+        } */
+        .texto{
+            /* Div --> Display: 
+                Block (padrão)
+                inline: não aceita configurações de tamanho e cor de fundo
+            */
+            /* Box-sizing:
+                Content-box (padrão): width + margin + padding
+                Border-box: width = conteúdo + border + padding
+                Padding-box: width = conteúdo + padding
+
+                Margin sempre será pra fora do conteúdo!!!!!
+            */
+            box-sizing: border-box;
+            background-color: red;
+            width: 50%;
+            min-width: none;
+            max-width: 500px;
+            height: 50%;
+            min-height: 50px;
+            max-height: 200px;
+            /* Overflow:
+                Hidden: faz com que o texto fique escondido.
+                Auto: cria uma barra de rolagem quando necessário
+            */
+            overflow: auto;
+            padding: 20PX;
+            border: 2px solid black;
+            margin: 0 auto 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <!-- <h1>Lorem</h1> -->
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed commodi officiis totam eveniet libero cupiditate? Officia suscipit, laborum natus debitis, ut molestias dolorum, eos dicta nemo fugiat possimus repellat. Non.</p> -->
+    </div>
+    <div class="texto">
+        <h1>Lorem</h1>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, rerum dolorem pariatur velit quia ipsum accusantium amet. Corrupti deleniti, veritatis odit tempore ullam iusto mollitia, aliquid unde ipsa recusandae quo.</p> -->
+    </div>
+</body>
+</html>

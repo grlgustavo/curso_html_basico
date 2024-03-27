@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Quando ativamos o display flex ganhamos os itens abaixo por padrão
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; - refere-se ao eixo principal
+            align-items: stretch; - refere-se ao item perpendicular*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            align-content: space-between;
+            background: yellow;
+            height: 640px;
+            margin: 10px;
+        }
+        .flex-item{
+            background: red;
+            width: 100%;
+            margin: 0 10px;
+        }
+        .flex-container_2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            background: yellow;
+            height: 250px;
+            
+        }
+        .flex-item_2{
+            background: red;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+        <div class="flex-item">Seis</div>
+        <div class="flex-item">Sete</div>
+        <div class="flex-item">Oito</div>
+        <div class="flex-item">Nove</div>
+        <div class="flex-item">Dez</div>        
+        <div class="flex-item">Onze</div>
+        <div class="flex-item">Doze</div>
+        <div class="flex-item">Treze</div>
+        <div class="flex-item">Quatorze</div>
+        <div class="flex-item">Quinze</div>
+        <div class="flex-item">Dezesseis</div>
+    </div>    
+    <br>
+    <div class="flex-container_2">
+        <div class="flex-item_2">Um</div>
+        <div class="flex-item_2">Dois</div>
+        <div class="flex-item_2">Três</div>
+        <div class="flex-item_2">Quatro</div>
+        <div class="flex-item_2">Cinco</div>        
+    </div>
+    <br>
+    <br>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox"> Link para o Flexbox</a>
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> Guia para o Flexbox</a>
+    
+</body>
+</html>
